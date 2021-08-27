@@ -10,7 +10,6 @@ const Convert = require('./modules/converter');
 
 exports.convert = async (req, res) => {
     return upload(req, res, async(err) => {
-        console.log(err);
         if(err) return res.status(500).json({
             status: 200,
             statusText: 'Apenas arquivos docx'
